@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Gallery | All Images</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <style>
+        .favorite-btn,
+        .download-btn,
+        .share-btn {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 5px;
+            padding: 9px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .favorite-btn {
+            background: #fff0f0;
+            color: #e63946;
+        }
+
+        .favorite-btn:hover,
+        .favorite-btn.active {
+            background: #e63946;
+            color: white;
+        }
+
+        .download-btn {
+            background: #e8f0ff;
+            color: #2457a6;
+        }
+
+        .download-btn:hover {
+            background: #2457a6;
+            color: white;
+        }
+
+        .share-btn {
+            background: #e8f8ef;
+            color: #16834a;
+        }
+
+        .share-btn:hover {
+            background: #16834a;
+            color: white;
+        }
+
+        .result-info {
+            margin: 20px 0;
+        }
+
+        #noResults {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="gallery-navbar">
+
+    <a href="dashboard.html" class="logo">
+        Pixel<span>Gallery.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="nature.html">Nature</a>
+        <a href="animals.html">Animals</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="travel.html">Travel</a>
+        <a href="favorites.html">Favorites ❤️</a>
+    </nav>
+
+</header>
+
+<main class="gallery-page">
+
+    <div class="gallery-heading">
+
+        <p>OUR COLLECTION</p>
+
+        <h1>Explore All Images</h1>
+
+        <span>
+            Discover beautiful moments from around the world.
+        </span>
+
+    </div>
+
+    <div class="gallery-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search images..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">All Categories</option>
+            <option value="nature">Nature</option>
+            <option value="animals">Animals</option>
+            <option value="architecture">Architecture</option>
+            <option value="travel">Travel</option>
+
+        </select>
+
+    </div>
+
+    <div class="result-info">
+        Showing <span id="imageCount">8</span> images
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+        <div class="image-card" data-category="nature">
+
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700" alt="Mountain">
+
+            <div class="image-info">
+                <h3>Mountain View</h3>
+                <p>Nature</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="nature">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Landscape">
+
+            <div class="image-info">
+                <h3>Beautiful Landscape</h3>
+                <p>Nature</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="animals">
+
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=700" alt="Lion">
+
+            <div class="image-info">
+                <h3>Wild Lion</h3>
+                <p>Animals</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="animals">
+
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=700" alt="Deer">
+
+            <div class="image-info">
+                <h3>Beautiful Deer</h3>
+                <p>Animals</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="architecture">
+
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700" alt="Building">
+
+            <div class="image-info">
+                <h3>Modern Building</h3>
+                <p>Architecture</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="architecture">
+
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700" alt="Architecture">
+
+            <div class="image-info">
+                <h3>City Architecture</h3>
+                <p>Architecture</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="travel">
+
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700" alt="Travel">
+
+            <div class="image-info">
+                <h3>Travel Destination</h3>
+                <p>Travel</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+        <div class="image-card" data-category="travel">
+
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700" alt="Mountains">
+
+            <div class="image-info">
+                <h3>Mountain Adventure</h3>
+                <p>Travel</p>
+                <button type="button" class="favorite-btn">🤍 Add to Favorites</button>
+                <button type="button" class="download-btn">⬇️ Download</button>
+                <button type="button" class="share-btn">🔗 Share</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="noResults">
+
+        <h2>No Images Found 😔</h2>
+
+        <p>Try searching with another keyword.</p>
+
+    </div>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+
+    <button class="close-btn" id="closeBtn">&times;</button>
+
+    <button class="prev-btn" id="prevBtn">&#10094;</button>
+
+    <img src="" id="previewImage" alt="Image Preview">
+
+    <button class="next-btn" id="nextBtn">&#10095;</button>
+
+</div>
+
+<script src="gallery.js"></script>
+
+</body>
+</html>

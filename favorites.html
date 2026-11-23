@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favorites | Pixel Gallery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <style>
+
+        .favorite-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .favorite-heading p {
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .remove-favorite {
+            margin-top: 12px;
+            padding: 9px 16px;
+            border: none;
+            border-radius: 20px;
+            background: #ffe8e8;
+            color: #e63946;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .remove-favorite:hover {
+            background: #e63946;
+            color: white;
+        }
+
+        .empty-favorites {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .empty-favorites h2 {
+            margin-bottom: 12px;
+        }
+
+        .empty-favorites a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #e63946;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<header class="gallery-navbar">
+
+    <a href="dashboard.html" class="logo">
+        Pixel<span>Gallery.</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="nature.html">Nature</a>
+
+        <a href="animals.html">Animals</a>
+
+        <a href="architecture.html">Architecture</a>
+
+        <a href="travel.html">Travel</a>
+
+        <a href="favorites.html" class="active">Favorites ❤️</a>
+
+    </nav>
+
+</header>
+
+
+<main class="gallery-page">
+
+    <div class="gallery-heading favorite-heading">
+
+        <p>YOUR PERSONAL COLLECTION</p>
+
+        <h1>My Favorites ❤️</h1>
+
+        <span>
+            All your favorite images in one place.
+        </span>
+
+    </div>
+
+
+    <div class="result-info">
+
+        Total Favorites: <span id="favoriteCount">0</span>
+
+    </div>
+
+
+    <div class="gallery-grid" id="favoritesGrid"></div>
+
+
+    <div class="empty-favorites" id="emptyMessage">
+
+        <h2>🤍 No Favorites Yet!</h2>
+
+        <p>
+            You haven't added any images to your favorites.
+        </p>
+
+        <a href="gallery.html">
+            Explore Gallery
+        </a>
+
+    </div>
+
+</main>
+
+
+<script src="favorites.js"></script>
+
+</body>
+
+</html>
