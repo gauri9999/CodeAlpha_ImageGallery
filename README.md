@@ -1,12 +1,20 @@
-# CodeAlpha Image Gallery
+# CodeAlpha Image Gallery 🖼️
 
-## Project Overview
+## About the Project
+CodeAlpha Image Gallery is a responsive and interactive website developed as part of the CodeAlpha Frontend Development Internship.
 
-CodeAlpha Image Gallery is a responsive and interactive image gallery website developed using HTML, CSS, and JavaScript.
+It allows users to explore images from different categories through a clean and user-friendly interface.
 
-The project allows users to explore beautiful images across different categories, search for images, preview them using a lightbox, add images to favorites, download images, and share image links.
-
-The website provides a user-friendly interface with modern styling, smooth transitions, and responsive layouts for different screen sizes.
+## Features
+- Responsive image gallery layout
+- Image search functionality
+- Category-based filtering
+- Lightbox image preview
+- Next and Previous image navigation
+- Add and Remove Favorites
+- Download Images
+- Share Images
+- Smooth hover effects and transitions
 
 ## Technologies Used
 - HTML5
@@ -15,13 +23,31 @@ The website provides a user-friendly interface with modern styling, smooth trans
 - Local Storage
 - Unsplash Images
 
-## Key Features
-- Responsive Image Gallery
-- Image Search
-- Category Filtering
-- Lightbox Image Preview
-- Next and Previous Navigation
-- Add/Remove Favorites
-- Download Images
-- Share Image Links
-- Smooth Hover Effects
+## Project Structure
+```text
+ImageGallery/
+├── index.html
+├── dashboard.html
+├── gallery.html
+├── favorites.html
+├── nature.html
+├── animals.html
+├── architecture.html
+├── travel.html
+├── gallery.js
+├── favorites.js
+└── css/
+    ├── style.css
+    └── gallery.css
+```
+
+## How to Run
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Install the Live Server extension.
+4. Right-click `index.html`.
+5. Select Open with Live Server.
+
+## Internship
+Developed as part of the CodeAlpha Frontend Development Internship.
+
